@@ -25,14 +25,14 @@ export function Header() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-black/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         {/* Logo / Name */}
         <Link
           href="/"
           className="font-serif text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
         >
-          Your Name
+          MD Wahidul Islam
         </Link>
 
         {/* Desktop Navigation */}
@@ -56,7 +56,7 @@ export function Header() {
         {/* Theme Toggle */}
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="rounded-full p-2 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+          className="rounded-full p-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
           aria-label="Toggle theme"
         >
           {mounted && (theme === "dark" ? "☀️" : "🌙")}

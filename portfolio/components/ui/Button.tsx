@@ -25,7 +25,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       primary: "bg-red text-white hover:bg-red-dark shadow-sm",
       secondary: "bg-turquoise text-white hover:bg-turquoise-dark",
       ghost:
-        "bg-transparent text-zinc-900 dark:text-zinc-100 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-900",
+        "bg-transparent text-zinc-800 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-900",
     };
 
     const sizes = {
@@ -37,9 +37,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <motion.button
         ref={ref}
-        whileHover={{ scale: 1.03 }}
+        whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
         className={cn(base, variants[variant], sizes[size], className)}
         {...props}
       >
