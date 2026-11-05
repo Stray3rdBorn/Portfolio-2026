@@ -10,7 +10,6 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
 }
 
 /**
- * Reusable button with three styles and gentle hover animation.
  * Red is used only for the primary (most important) actions.
  */
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(

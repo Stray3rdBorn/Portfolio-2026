@@ -8,11 +8,10 @@ interface SectionProps {
 
 /**
  * Simple wrapper that gives every section consistent spacing.
- * Keeps the layout clean and professional.
  */
 export function Section({ children, className, id }: SectionProps) {
   return (
-    <section id={id} className={cn("py-20 md:py-28 px-6", className)}>
+    <section id={id} className={cn("py-24 md:py-32 px-6 lg:px-8", className)}>
       <div className="mx-auto max-w-5xl">{children}</div>
     </section>
   );

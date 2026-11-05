@@ -8,11 +8,11 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Your Name | Portfolio",
-    template: "%s | Your Name",
+    default: "MD Wahidul Islam | Portfolio",
+    template: "%s | MD Wahidul Islam",
   },
   description:
-    "Personal portfolio of a developer who loves building elegant digital experiences.",
+    "Personal portfolio of MD Wahidul Islam, a developer who loves building elegant digital experiences.",
 };
 export default function RootLayout({
   children,
