@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* Custom color palette - Black, White, Red, Turquoise */
+/*color palette */
 @theme {
-  /* Neutrals */
-  --color-black: #0a0a0a;
+  /* Neutrals - softer blacks & whites */
+  --color-black: #09090b;
   --color-white: #fafafa;
   --color-zinc-50: #fafafa;
   --color-zinc-100: #f4f4f5;
@@ -17,31 +17,42 @@
   --color-zinc-900: #18181b;
   --color-zinc-950: #09090b;
 
-  /* Accents - use sparingly */
-  --color-red: #e11d48; /* Primary CTA / important highlights */
+  /* Accents */
+  --color-red: #e11d48;
   --color-red-dark: #be123c;
-  --color-turquoise: #14b8a6; /* Links, secondary accents, hovers */
+  --color-turquoise: #0d9488;
+  --color-turquoise-light: #14b8a6;
   --color-turquoise-dark: #0f766e;
 }
 
-/* Base styles */
+/* Base */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-white text-zinc-900 antialiased;
+  @apply bg-white text-zinc-800 antialiased;
   font-feature-settings:
     "rlig" 1,
     "calt" 1;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-/* Dark mode */
-.dark body {
-  @apply bg-black text-zinc-100;
+/* Dark mode via data-theme */
+[data-theme="dark"] body {
+  @apply bg-black text-zinc-200;
 }
 
-/* Respect reduced motion (Checklist #3) */
+/*theme transition */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -53,7 +64,7 @@ body {
   }
 }
 
-/* Focus styles for accessibility (Checklist #6) */
+/* Better focus */
 :focus-visible {
   @apply outline-2 outline-offset-2 outline-turquoise;
 }
