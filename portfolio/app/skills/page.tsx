@@ -36,7 +36,7 @@ export default function SkillsPage() {
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-zinc-300 dark:border-zinc-700 px-5 py-2 text-sm"
+                  className="rounded-full border border-border px-5 py-2 text-sm"
                 >
                   {skill}
                 </span>
