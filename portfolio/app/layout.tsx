@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | MD Wahidul Islam",
   },
   description:
-    "Personal portfolio of MD Wahidul Islam, a developer who loves building elegant digital experiences.",
+    "Personal portfolio of MD Wahidul Islam, a developer who loves building system tools & games.",
 };
 export default function RootLayout({
   children,
