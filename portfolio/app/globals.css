@@ -24,6 +24,7 @@
   /* Semantic — these swap between themes */
   --color-bg: var(--color-white);
   --color-surface: var(--color-zinc-100);
+  --color-border: var(--color-zinc-300);
   --color-text: var(--color-zinc-800);
   --color-muted: var(--color-zinc-500);
   --color-accent: var(--color-turquoise);
@@ -38,6 +39,7 @@
   --color-muted: var(--color-zinc-400);
   --color-accent: var(--color-turquoise-light);
   --color-accent-strong: var(--color-turquoise);
+  --color-border: var(--color-zinc-700);
 }
 
 html {
