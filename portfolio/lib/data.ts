@@ -53,6 +53,7 @@ export const projects: Project[] = [
       "A classic Endless Runner game built with Lua and Love2D.",
     ],
     tags: ["Lua", "Love2D"],
+    githubUrl: "https://github.com/Stray3rdBorn/Love2d-Endless-Runner-Sandbox",
     year: 2026,
   },
   {
