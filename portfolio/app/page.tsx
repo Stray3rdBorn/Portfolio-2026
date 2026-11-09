@@ -53,7 +53,7 @@ export default function HomePage() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
-              className="group block rounded-2xl border border-surface bg-bg p-6 transition-all hover:border-accent/50"
+              className="group block rounded-2xl border border-border bg-bg p-6 transition-colors hover:border-accent/50"
             >
               <h3 className="text-xl font-medium group-hover:text-accent transition-colors">
                 {project.title}
@@ -63,7 +63,7 @@ export default function HomePage() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-surface px-3 py-1 text-xs"
+                    className="rounded-full bg-surface border border-border px-3 py-1 text-xs"
                   >
                     {tag}
                   </span>
@@ -71,6 +71,23 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
+        </div>
+      </Section>
+
+      {/* Research Brief */}
+      <Section>
+        <div className="max-w-3xl">
+          <h2 className="font-serif text-3xl font-medium mb-6">Research</h2>
+          <p className="text-lg text-muted leading-relaxed mb-6">
+            For my undergraduate thesis, I built a multimodal emotion
+            recognition system that combines facial expression analysis with
+            speech prosody. By fusing a CNN for facial features with an LSTM for
+            audio, the system achieved roughly 82% accuracy on speech and 68% on
+            facial expressions.
+          </p>
+          <Link href="/research">
+            <Button variant="ghost">View Research Details</Button>
+          </Link>
         </div>
       </Section>
     </>

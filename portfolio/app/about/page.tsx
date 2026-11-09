@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <Section className="pt-32">
-      <div className="max-w-5xl">
+      <div className="max-w-6xl">
         {/* Flex container: wraps text and image side-by-side on desktop */}
         <div className="flex flex-col md:flex-row gap-10 md:items-start">
           {/* Text column */}

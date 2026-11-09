@@ -6,16 +6,80 @@ export const metadata = {
 
 const skillGroups = [
   {
+    title: "Fundamentals",
+    skills: [
+      "DSA",
+      "OOP",
+      "System Design Basics",
+      "OS",
+      "DBMS",
+      "Computer Networks",
+      "Competitive Programming",
+    ],
+  },
+  {
+    title: "Languages",
+    skills: ["Python", "C/C++", "TypeScript", "JavaScript", "Lua", "Assembly"],
+  },
+
+  {
     title: "Frontend",
-    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML5",
+      "CSS3",
+    ],
   },
   {
-    title: "Tools & Practices",
-    skills: ["Git", "Figma", "Accessibility", "Performance", "SEO"],
+    title: "Backend & Security",
+    skills: [
+      "Node.js (Express)",
+      "FastAPI",
+      "Django",
+      "REST APIs",
+      "JWT",
+      "bcrypt",
+      "API-key auth",
+      "Input validation",
+    ],
   },
   {
-    title: "Currently Exploring",
-    skills: ["Advanced animations", "Design systems", "System design"],
+    title: "Databases & Caching",
+    skills: ["PostgreSQL", "MongoDB", "Redis", "SQL"],
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face"],
+  },
+  {
+    title: "Data & Domain Libraries",
+    skills: [
+      "OpenCV (Vision)",
+      "Librosa (Audio)",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+    ],
+  },
+  {
+    title: "Tools & Deployment",
+    skills: [
+      "Git",
+      "GitHub Actions",
+      "Docker",
+      "Linux",
+      "Postman",
+      "Render",
+      "Neon",
+      "Cloudflare",
+    ],
+  },
+  {
+    title: "Game Dev",
+    skills: ["Pygame", "Love2D"],
   },
 ];
 
@@ -26,17 +90,20 @@ export default function SkillsPage() {
         Skills
       </h1>
 
-      <div className="space-y-16">
+      <div className="flex flex-col gap-10">
         {skillGroups.map((group) => (
-          <div key={group.title}>
-            <h2 className="text-xl font-medium text-accent mb-6">
+          <div
+            key={group.title}
+            className="border-b border-border pb-8 last:border-0 last:pb-0"
+          >
+            <h2 className="text-xl font-medium text-accent mb-5">
               {group.title}
             </h2>
             <div className="flex flex-wrap gap-3">
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-border px-5 py-2 text-sm"
+                  className="rounded-full border border-border px-5 py-2 text-sm text-text"
                 >
                   {skill}
                 </span>
