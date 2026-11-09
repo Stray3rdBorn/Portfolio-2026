@@ -24,7 +24,7 @@ export default async function ProjectPage({ params }: Props) {
     <Section className="pt-32">
       <Link
         href="/projects"
-        className="text-sm text-turquoise hover:underline mb-8 inline-block"
+        className="text-sm text-accent hover:underline mb-8 inline-block"
       >
         ← Back to projects
       </Link>
@@ -32,9 +32,9 @@ export default async function ProjectPage({ params }: Props) {
       <h1 className="font-serif text-4xl md:text-5xl font-medium">
         {project.title}
       </h1>
-      <p className="mt-4 text-zinc-500">{project.year}</p>
+      <p className="mt-4 text-muted">{project.year}</p>
 
-      <div className="mt-10 max-w-3xl space-y-6 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+      <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed">
         <p>{project.longDescription}</p>
       </div>
 

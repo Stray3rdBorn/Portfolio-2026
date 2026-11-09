@@ -27,7 +27,7 @@ export default function RootLayout({
     >
       <body className="font-sans">
         <ThemeProvider
-          attribute="data-theme"
+          attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange={false}

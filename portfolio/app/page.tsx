@@ -11,11 +11,11 @@ export default function HomePage() {
       {/* Hero */}
       <Section className="pt-32 pb-20">
         <div className="max-w-3xl">
-          <h1 className="font-serif text-5xl md:text-6xl font-medium tracking-tight text-zinc-900 dark:text-zinc-50">
+          <h1 className="font-serif text-5xl md:text-6xl font-medium tracking-tight text-text">
             Building elegant <br />
             digital experiences
           </h1>
-          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <p className="mt-6 text-lg text-muted leading-relaxed">
             I am a developer who cares about clarity, performance, and
             thoughtful design. Welcome to my corner of the internet.
           </p>
@@ -35,12 +35,12 @@ export default function HomePage() {
       </Section>
 
       {/* Featured Projects */}
-      <Section className="bg-zinc-50 dark:bg-zinc-950">
+      <Section className="bg-surface">
         <div className="flex items-end justify-between mb-12">
           <h2 className="font-serif text-3xl font-medium">Selected Work</h2>
           <Link
             href="/projects"
-            className="text-sm font-medium text-turquoise hover:underline"
+            className="text-sm font-medium text-accent hover:underline"
           >
             View all →
           </Link>
@@ -51,19 +51,17 @@ export default function HomePage() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
-              className="group block rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 transition-all hover:border-turquoise/50"
+              className="group block rounded-2xl border border-surface bg-bg p-6 transition-all hover:border-accent/50"
             >
-              <h3 className="text-xl font-medium group-hover:text-turquoise transition-colors">
+              <h3 className="text-xl font-medium group-hover:text-accent transition-colors">
                 {project.title}
               </h3>
-              <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-                {project.description}
-              </p>
+              <p className="mt-2 text-muted">{project.description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1 text-xs"
+                    className="rounded-full bg-surface px-3 py-1 text-xs"
                   >
                     {tag}
                   </span>

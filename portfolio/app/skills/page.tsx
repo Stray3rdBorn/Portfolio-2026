@@ -29,7 +29,7 @@ export default function SkillsPage() {
       <div className="space-y-16">
         {skillGroups.map((group) => (
           <div key={group.title}>
-            <h2 className="text-xl font-medium text-turquoise mb-6">
+            <h2 className="text-xl font-medium text-accent mb-6">
               {group.title}
             </h2>
             <div className="flex flex-wrap gap-3">

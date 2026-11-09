@@ -11,7 +11,7 @@ export default function AboutPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-medium">
           About Me
         </h1>
-        <div className="mt-10 space-y-6 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        <div className="mt-10 space-y-6 text-lg text-muted leading-relaxed">
           <p>
             I am a developer who believes that the best digital products feel
             inevitable — clear, fast, and quietly beautiful.
