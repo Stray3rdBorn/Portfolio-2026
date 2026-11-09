@@ -1,7 +1,14 @@
 import Link from "next/link";
+import { cacheLife } from "next/cache";
 
-export function Footer() {
-  const currentYear = new Date().getFullYear();
+async function getCurrentYear() {
+  "use cache";
+  cacheLife("max");
+  return new Date().getFullYear();
+}
+
+export async function Footer() {
+  const currentYear = await getCurrentYear();
 
   return (
     <footer className="border-t border-surface bg-bg">

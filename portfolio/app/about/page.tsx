@@ -11,7 +11,7 @@ export default function AboutPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-medium">
           About Me
         </h1>
-        <div className="mt-10 space-y-6 text-lg text-muted leading-relaxed">
+        <div className="mt-10 space-y-6 text-lg text-muted leading-relaxed text-justify">
           <p>
             For as long as I can remember I've always been into technology. My
             resources were limited, my curiosity wasn't. Fast forward to today,
@@ -42,8 +42,8 @@ export default function AboutPage() {
             not just a word in a tutorial. Both taught me more than any course
             did. Both also taught me that the hard part is never the code, it's
             the twenty small decisions around it. Currently, I'm learning and
-            working on system tools that solve inconvenience people actually
-            face.
+            working on command-line tools that solve inconvenience people
+            actually face.
           </p>
           <p>
             Outside of this, I read a lot of philosophy, history, politics,
