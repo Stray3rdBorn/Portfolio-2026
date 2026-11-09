@@ -24,7 +24,7 @@
   /* LIGHT MODE: off-white background, red accent */
   --color-bg: #fffbc4; /* off-white, faint warm tint */
   --color-surface: #fdfff0; /* cards are pure white — pop against off-white */
-  --color-border: #ff1818; /* visible border */
+  --color-border: #a30000; /* visible border */
   --color-text: #431f19; /* dark brown, no tint */
   --color-muted: #71717a;
   --color-accent: #f40000; /* red */

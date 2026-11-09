@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export function Footer() {
-  const currentYear = 2026;
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="border-t border-surface bg-bg">
@@ -11,14 +11,16 @@ export function Footer() {
         </p>
 
         <div className="flex gap-6">
-          <Link
-            href="/interests"
+          <a
+            href="https://www.facebook.com/share/1HKVK2JHYB"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-muted hover:text-accent transition-colors"
           >
-            Interests
-          </Link>
+            Facebook
+          </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Stray3rdborn"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted hover:text-accent transition-colors"
@@ -26,12 +28,20 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/md-wahidul-islam-973304265"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted hover:text-accent transition-colors"
           >
             LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/wahidihan_514m/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted hover:text-accent transition-colors"
+          >
+            Instagram
           </a>
         </div>
       </div>

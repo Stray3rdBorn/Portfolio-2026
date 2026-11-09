@@ -11,8 +11,7 @@ export const metadata: Metadata = {
     default: "MD Wahidul Islam | Portfolio",
     template: "%s | MD Wahidul Islam",
   },
-  description:
-    "Personal portfolio of MD Wahidul Islam, a developer who loves building system tools & games.",
+  description: "Full stack developer who loves building system tools & games.",
 };
 export default function RootLayout({
   children,
