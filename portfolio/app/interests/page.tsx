@@ -6,7 +6,6 @@ export const metadata = {
 };
 
 export default function InterestsPage() {
-  // Group by category for a clean layout
   const categories = Array.from(new Set(interests.map((i) => i.category)));
 
   return (
@@ -33,7 +32,7 @@ export default function InterestsPage() {
                 .map((item) => (
                   <div
                     key={item.id}
-                    className="rounded-2xl border border-surface bg-surface p-6"
+                    className="rounded-2xl border border-border bg-surface p-6"
                   >
                     <h3 className="text-lg font-medium">{item.title}</h3>
                     <p className="mt-2 text-muted">{item.description}</p>

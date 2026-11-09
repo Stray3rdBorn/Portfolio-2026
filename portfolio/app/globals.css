@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Your existing palette — unchanged */
+  /* color palette*/
   --color-black: #09090b;
   --color-white: #fafafa;
   --color-zinc-50: #fafafa;
@@ -21,9 +21,11 @@
   --color-turquoise-light: #14b8a6;
   --color-turquoise-dark: #0f766e;
 
-  /* Semantic — these swap between themes */
+  /* semantic tokens */
   --color-bg: var(--color-white);
-  --color-surface: var(--color-zinc-100);
+
+  --color-surface: var(--color-zinc-200);
+
   --color-border: var(--color-zinc-300);
   --color-text: var(--color-zinc-800);
   --color-muted: var(--color-zinc-500);
@@ -34,7 +36,9 @@
 /* Dark overrides — only the semantic tokens change */
 .dark {
   --color-bg: var(--color-black);
-  --color-surface: var(--color-zinc-900);
+
+  --color-surface: var(--color-zinc-800);
+
   --color-text: var(--color-zinc-200);
   --color-muted: var(--color-zinc-400);
   --color-accent: var(--color-turquoise-light);
@@ -59,7 +63,7 @@ body {
 }
 
 * {
-  transition-property: background-color, border-color, color, fill, stroke;
+  transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 }
