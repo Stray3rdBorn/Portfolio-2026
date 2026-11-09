@@ -2,9 +2,9 @@ export interface Project {
   slug: string;
   title: string;
   description: string;
-  longDescription: string;
+  longDescription: string[]; // Changed to array for multiple paragraphs
   tags: string[];
-  image: string;
+  image?: string; // Added ? because not all projects have images
   liveUrl?: string;
   githubUrl?: string;
   year: number;

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { projects } from "@/lib/data";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export async function generateStaticParams() {
@@ -14,8 +14,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const { slug } = await params;
+export default function ProjectPage({ params }: Props) {
+  const { slug } = params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) notFound();
@@ -35,7 +35,9 @@ export default async function ProjectPage({ params }: Props) {
       <p className="mt-4 text-muted">{project.year}</p>
 
       <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed">
-        <p>{project.longDescription}</p>
+        {project.longDescription.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
 
       <div className="mt-10 flex flex-wrap gap-4">
