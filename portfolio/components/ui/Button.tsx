@@ -9,9 +9,6 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
   size?: "sm" | "md" | "lg";
 }
 
-/**
- * Red is used only for the primary (most important) actions.
- */
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     { className, variant = "primary", size = "md", children, ...props },
@@ -21,9 +18,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       "inline-flex items-center justify-center font-medium rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent disabled:opacity-50 disabled:pointer-events-none";
 
     const variants = {
-      primary: "bg-red text-white hover:bg-red-dark shadow-sm",
+      primary: "bg-accent text-white hover:bg-accent-strong shadow-sm",
       secondary: "bg-accent text-white hover:bg-accent-strong",
-      ghost: "bg-transparent text-text border border-border hover:bg-surface",
+      ghost:
+        "bg-transparent text-text border border-border hover:bg-accent hover:text-white hover:border-accent",
     };
 
     const sizes = {

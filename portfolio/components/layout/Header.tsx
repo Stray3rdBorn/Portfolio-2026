@@ -53,10 +53,28 @@ export function Header() {
         {/* Theme Toggle */}
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="rounded-full p-2 text-muted hover:text-text hover:bg-surface transition-colors"
+          className="rounded-full p-2 text-muted hover:text-accent transition-colors"
           aria-label="Toggle theme"
         >
-          {mounted && (theme === "dark" ? "☀️" : "🌙")}
+          {mounted && (
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path
+                d="M12 3a9 9 0 0 0 0 18z"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          )}
         </button>
       </div>
     </header>

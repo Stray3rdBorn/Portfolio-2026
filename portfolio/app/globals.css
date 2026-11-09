@@ -15,17 +15,17 @@
   --color-zinc-800: #27272a;
   --color-zinc-900: #18181b;
   --color-zinc-950: #09090b;
-  --color-red: #e11d48;
-  --color-red-dark: #be123c;
+  --color-red: #e11d1d;
+  --color-red-dark: #820000;
   --color-turquoise: #0d9488;
   --color-turquoise-light: #14b8a6;
   --color-turquoise-dark: #0f766e;
 
   /* LIGHT MODE: off-white background, red accent */
-  --color-bg: #fdfff0; /* off-white, faint warm tint */
-  --color-surface: #fffabd; /* cards are pure white — pop against off-white */
+  --color-bg: #fffbc4; /* off-white, faint warm tint */
+  --color-surface: #fdfff0; /* cards are pure white — pop against off-white */
   --color-border: #ff1818; /* visible border */
-  --color-text: #18181b;
+  --color-text: #431f19; /* dark brown, no tint */
   --color-muted: #71717a;
   --color-accent: #f40000; /* red */
   --color-accent-strong: #7f0000; /* darker red for hover */
@@ -36,7 +36,7 @@
   --color-bg: #1f1f1f; /* neutral dark gray */
   --color-surface: #2f2f2f; /* slightly lighter gray card */
   --color-border: #00716d; /* neutral border */
-  --color-text: #f0f0f2; /* near-white, no tint */
+  --color-text: #b0b2b2; /* near-white, no tint */
   --color-muted: #8a8a92; /* neutral muted gray */
   --color-accent: #14b8a6; /* turquoise */
   --color-accent-strong: #2dd4bf; /* lighter turquoise hover */
