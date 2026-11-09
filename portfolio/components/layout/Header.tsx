@@ -10,6 +10,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
+  { href: "/research", label: "Research" },
   { href: "/skills", label: "Skills" },
   { href: "/interests", label: "Interests" },
   { href: "/contact", label: "Contact" },
@@ -29,7 +30,7 @@ export function Header() {
         {/* Logo / Name */}
         <Link
           href="/"
-          className="font-serif text-xl font-semibold tracking-tight text-text"
+          className="font-serif text-2xl font-semibold tracking-tight text-text"
         >
           MD Wahidul Islam
         </Link>

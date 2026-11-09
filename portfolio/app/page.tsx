@@ -12,12 +12,15 @@ export default function HomePage() {
       <Section className="pt-32 pb-20">
         <div className="max-w-3xl">
           <h1 className="font-serif text-5xl md:text-6xl font-medium tracking-tight text-text">
-            Building elegant <br />
-            digital experiences
+            Hi, I'm Wahid, <br />
+            Software Engineer & Developer.
           </h1>
           <p className="mt-6 text-lg text-muted leading-relaxed">
-            I am a developer who cares about clarity, performance, and
-            thoughtful design. Welcome to my corner of the internet.
+            I code at the intersection of logic, research, and play. Whether
+            it's writing optimized software, exploring complex data, or building
+            interactive game worlds, I just like making things work. This site
+            is a living archive of my experiments, breakthroughs, and
+            half-finished ideas. Above all, I love to learn.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/projects">
