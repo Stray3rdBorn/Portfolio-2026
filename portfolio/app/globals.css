@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* color palette*/
+  /* Base palette*/
   --color-black: #09090b;
   --color-white: #fafafa;
   --color-zinc-50: #fafafa;
@@ -21,29 +21,25 @@
   --color-turquoise-light: #14b8a6;
   --color-turquoise-dark: #0f766e;
 
-  /* semantic tokens */
-  --color-bg: var(--color-white);
-
-  --color-surface: var(--color-zinc-200);
-
-  --color-border: var(--color-zinc-300);
-  --color-text: var(--color-zinc-800);
-  --color-muted: var(--color-zinc-500);
-  --color-accent: var(--color-turquoise);
-  --color-accent-strong: var(--color-turquoise-dark);
+  /* LIGHT MODE: off-white background, red accent */
+  --color-bg: #fdfff0; /* off-white, faint warm tint */
+  --color-surface: #fffabd; /* cards are pure white — pop against off-white */
+  --color-border: #ff1818; /* visible border */
+  --color-text: #18181b;
+  --color-muted: #71717a;
+  --color-accent: #f40000; /* red */
+  --color-accent-strong: #7f0000; /* darker red for hover */
 }
 
-/* Dark overrides — only the semantic tokens change */
 .dark {
-  --color-bg: var(--color-black);
-
-  --color-surface: var(--color-zinc-800);
-
-  --color-text: var(--color-zinc-200);
-  --color-muted: var(--color-zinc-400);
-  --color-accent: var(--color-turquoise-light);
-  --color-accent-strong: var(--color-turquoise);
-  --color-border: var(--color-zinc-700);
+  /* DARK MODE: neutral dark gray, turquoise accent */
+  --color-bg: #1f1f1f; /* neutral dark gray */
+  --color-surface: #2f2f2f; /* slightly lighter gray card */
+  --color-border: #00716d; /* neutral border */
+  --color-text: #f0f0f2; /* near-white, no tint */
+  --color-muted: #8a8a92; /* neutral muted gray */
+  --color-accent: #14b8a6; /* turquoise */
+  --color-accent-strong: #2dd4bf; /* lighter turquoise hover */
 }
 
 html {
