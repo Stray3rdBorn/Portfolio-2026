@@ -4,20 +4,41 @@ import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 
 export function ContactForm() {
-  // Track the submit state so the button label and status message can update
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
 
-  // TODO: swap the fake delay for a real fetch to /api/contact (or a server action) when the backend is ready
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
 
-    // Temporary placeholder so I can see the sending/sent states working
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
-    setStatus("sent");
+    const data = {
+      access_key: "11d6f6e8-95e1-44a8-9248-d303ba8c3078",
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      setStatus("sent");
+      form.reset();
+    } else {
+      setStatus("error");
+    }
   }
 
   return (
@@ -37,7 +58,6 @@ export function ContactForm() {
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
       </div>
-
       <div>
         <label
           htmlFor="email"
@@ -53,7 +73,6 @@ export function ContactForm() {
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
       </div>
-
       <div>
         <label
           htmlFor="message"
@@ -69,8 +88,6 @@ export function ContactForm() {
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
       </div>
-
-      {/* Disable while sending so the form can't be submitted twice */}
       <Button
         type="submit"
         variant="primary"
@@ -79,9 +96,8 @@ export function ContactForm() {
       >
         {status === "sending" ? "Sending..." : "Send Message"}
       </Button>
-
       {status === "sent" && (
-        <p className="text-sm text-accent">Message sent successfully!</p>
+        <p className="text-sm text-accent">Message sent successfully.</p>
       )}
       {status === "error" && (
         <p className="text-sm text-red">

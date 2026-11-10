@@ -15,8 +15,8 @@ export default function InterestsPage() {
           Interests
         </h1>
         <p className="mt-6 text-lg text-muted">
-          The things that shape how I think — kept on a separate page so the
-          rest of the site can stay focused and professional.
+          The things that shape how I think, kept on a separate page so the rest
+          of the site can stay focused and professional.
         </p>
       </div>
 
