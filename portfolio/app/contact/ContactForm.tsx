@@ -54,6 +54,7 @@ export function ContactForm() {
           type="text"
           id="name"
           name="name"
+          maxLength={20}
           required
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
@@ -69,6 +70,7 @@ export function ContactForm() {
           type="email"
           id="email"
           name="email"
+          maxLength={20}
           required
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
@@ -84,6 +86,7 @@ export function ContactForm() {
           id="message"
           name="message"
           rows={5}
+          maxLength={200}
           required
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
