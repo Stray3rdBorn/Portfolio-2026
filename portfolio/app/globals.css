@@ -26,20 +26,20 @@
   --color-surface: #fdfff0; /* cards are pure white — pop against off-white */
   --color-border: #a30000; /* visible border */
   --color-text: #431f19; /* dark brown, no tint */
-  --color-muted: #71717a;
+  --color-muted: #826536;
   --color-accent: #f40000; /* red */
   --color-accent-strong: #7f0000; /* darker red for hover */
 }
 
 .dark {
   /* DARK MODE: neutral dark gray, turquoise accent */
-  --color-bg: #1f1f1f; /* neutral dark gray */
-  --color-surface: #2f2f2f; /* slightly lighter gray card */
-  --color-border: #00716d; /* neutral border */
-  --color-text: #b0b2b2; /* near-white, no tint */
-  --color-muted: #8a8a92; /* neutral muted gray */
-  --color-accent: #14b8a6; /* turquoise */
-  --color-accent-strong: #005046; /* lighter turquoise hover */
+  --color-bg: #181818; /* neutral dark gray */
+  --color-surface: #0b1111; /* deep darker torquoise */
+  --color-border: #00afa9; /* torquoise border */
+  --color-text: #00c7c7; /* near-white, no tint */
+  --color-muted: #5e5e5e; /* neutral muted gray */
+  --color-accent: #03ffe3; /* turquoise */
+  --color-accent-strong: #003932; /* lighter turquoise hover */
 }
 
 html {

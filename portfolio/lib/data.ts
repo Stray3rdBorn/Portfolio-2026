@@ -48,9 +48,11 @@ export const projects: Project[] = [
   {
     slug: "lua-project",
     title: "Lua Project",
-    description: "A game project built with Lua and Love2D.",
+    description: "A minimal Endless Jumper game built with Lua and Love2D.",
     longDescription: [
-      "A classic Endless Runner game built with Lua and Love2D.",
+      "Endless Jumper Sandbox is a small side-scrolling game where the player jumps over an enemy square that speeds up over time. It was built in pure Lua with LÖVE2D, with no external libraries. Everything is written against the raw LÖVE API.",
+      "The project is intentionally kept small and readable so it can be used as a learning reference. It implements a clean three-state game system (startscreen → play → gameover), simple gravity and jump physics, and AABB collision detection for the player and enemy hitboxes.",
+      "The game also includes an instant restart loop that resets player position, velocity, and enemy speed without reloading the scene. The whole thing lives in a single main.lua file, which made it a good exercise in writing code that is easy to read rather than easy to hide behind.",
     ],
     tags: ["Lua", "Love2D"],
     githubUrl: "https://github.com/Stray3rdBorn/Love2d-Endless-Runner-Sandbox",

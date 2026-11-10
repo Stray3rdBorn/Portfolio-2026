@@ -14,7 +14,7 @@ export default function HomePage() {
           <h1 className="font-serif text-5xl md:text-6xl font-medium tracking-tight text-text">
             Software Engineer <br />& Developer.
           </h1>
-          <p className="mt-6 text-lg text-muted leading-relaxed">
+          <p className="mt-6 text-lg text-muted leading-relaxed text-justify">
             I code at the intersection of logic, research, and play. Whether
             it's writing optimized software, exploring complex data, or building
             interactive game worlds, I just like making things work. This site
@@ -53,17 +53,19 @@ export default function HomePage() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
-              className="group block rounded-2xl border border-border bg-bg p-6 transition-colors hover:border-accent/50"
+              className="group block rounded-2xl border border-border bg-bg p-6 transition-all duration-300 hover:bg-accent hover:border-accent"
             >
-              <h3 className="text-xl font-medium group-hover:text-accent transition-colors">
+              <h3 className="text-xl font-medium text-text group-hover:text-white transition-colors">
                 {project.title}
               </h3>
-              <p className="mt-2 text-muted">{project.description}</p>
+              <p className="mt-2 text-muted group-hover:text-white/90 transition-colors">
+                {project.description}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-surface border border-border px-3 py-1 text-xs"
+                    className="rounded-full bg-surface border border-border px-3 py-1 text-xs text-text group-hover:bg-black/40 group-hover:border-transparent group-hover:text-white transition-colors"
                   >
                     {tag}
                   </span>
@@ -76,9 +78,9 @@ export default function HomePage() {
 
       {/* Research Brief */}
       <Section>
-        <div className="max-w-3xl">
-          <h2 className="font-serif text-3xl font-medium mb-6">Research</h2>
-          <p className="text-lg text-muted leading-relaxed mb-6">
+        <div className="max-w-3xl text-justify">
+          <h2 className="font-serif text-3xl font-medium mb-6 ">Research</h2>
+          <p className="text-lg text-muted leading-relaxed mb-6 ">
             For my undergraduate thesis, I built a multimodal emotion
             recognition system that combines facial expression analysis with
             speech prosody. By fusing a CNN for facial features with an LSTM for
