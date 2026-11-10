@@ -8,11 +8,11 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "MD Wahidul Islam | Portfolio",
+    default: "MD Wahidul Islam",
     template: "%s | MD Wahidul Islam",
   },
   description:
-    "Full Stack Software Developer who loves building web applications, command-line tools & games.",
+    "Full Stack Software Developer solving real world problems building web applications, command-line tools & games for fun.",
 };
 export default function RootLayout({
   children,
