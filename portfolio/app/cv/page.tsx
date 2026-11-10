@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Download } from "lucide-react";
+import { PDFViewer } from "./PDFViewer";
 
 export const metadata = {
   title: "CV",
@@ -21,10 +22,7 @@ export default function CVPage() {
         </a>
       </div>
 
-      {/* The viewer */}
-      <div className="w-full h-[80vh] rounded-2xl border border-border overflow-hidden bg-surface">
-        <iframe src="/resume.pdf" className="w-full h-full" title="CV" />
-      </div>
+      <PDFViewer src="/resume.pdf" />
     </Section>
   );
 }
