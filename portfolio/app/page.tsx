@@ -55,17 +55,22 @@ export default function HomePage() {
               href={`/projects/${project.slug}`}
               className="group block rounded-2xl border border-border bg-bg p-6 transition-all duration-300 hover:bg-accent hover:border-accent"
             >
+              {/* Title */}
               <h3 className="text-xl font-medium text-text group-hover:text-white transition-colors">
                 {project.title}
               </h3>
-              <p className="mt-2 text-muted group-hover:text-white/90 transition-colors">
+
+              {/* Description */}
+              <p className="mt-2 text-muted group-hover:text-white/80 transition-colors">
                 {project.description}
               </p>
+
+              {/* Tags */}
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-surface border border-border px-3 py-1 text-xs text-text group-hover:bg-black/40 group-hover:border-transparent group-hover:text-white transition-colors"
+                    className="rounded-full bg-surface border border-border px-3 py-1 text-xs text-text dark:group-hover:bg-black/40 group-hover:border-transparent group-hover:text-white transition-colors"
                   >
                     {tag}
                   </span>
