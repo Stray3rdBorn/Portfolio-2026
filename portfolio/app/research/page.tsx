@@ -28,22 +28,43 @@ export default function ResearchPage() {
             <span className="text-sm text-muted">2025</span>
           </div>
           <p className="mt-2 text-sm text-accent">
-            Undergraduate Thesis · Sonargaon University
+            Undergraduate Thesis - Sonargaon University
           </p>
 
-          <div className="mt-6 space-y-4 text-muted leading-relaxed">
+          <div className="mt-6 space-y-4 text-muted leading-relaxed text-justify">
             <p>
-              A bimodal emotion recognition system that fuses facial expression
-              analysis with speech prosody to classify five emotions: happy,
-              sad, angry, fear, and neutral. The facial branch used a CNN on
-              48×48 grayscale face crops; the speech branch used an LSTM on MFCC
-              features with first and second derivatives.
+              For my undergraduate thesis, I built a multimodal emotion
+              recognition system that combines facial expression analysis with
+              speech prosody to classify five emotions: happy, sad, angry, fear,
+              and neutral. The goal was to test whether two modalities could
+              produce a more reliable system than either one alone, since faces
+              fail under occlusion and speech fails under noise. The system was
+              trained on FER 2013 and RAVDESS, plus a custom dataset of 5,500
+              video clips I collected and labeled by hand because no existing
+              dataset captured what I needed.
             </p>
             <p>
-              The two models were combined with confidence-based late fusion:
-              when both agreed, the label was accepted directly; when they
-              disagreed, the higher-confidence prediction won; when one modality
-              was unavailable, the system fell back to the other.
+              The facial branch used a CNN trained on 48 by 48 grayscale crops,
+              and the speech branch used an LSTM trained on MFCC features with
+              first and second derivatives. Both models output class
+              probabilities, and a late fusion layer combines them: when both
+              agree, the label is accepted directly; when they disagree, the
+              higher confidence prediction wins; and when one modality is
+              unavailable, the system falls back to the other. The final system
+              reached about 82 percent accuracy on speech and 68 percent on
+              facial expressions, with the fusion layer improving reliability in
+              cases where either single modality was weak.
+            </p>
+            <p>
+              I am currently rebuilding the system with a more modern stack. The
+              facial branch now uses MobileNetV2 as a pretrained backbone, the
+              speech branch uses a Bidirectional LSTM, and face detection runs
+              on MediaPipe instead of Haar cascades. The fusion layer applies
+              weighted averaging with temporal smoothing over a short window,
+              and the entire pipeline is modular, with separate scripts for
+              preprocessing, training, evaluation, and real time inference.
+              Results for the rebuilt models will be added once training is
+              complete.
             </p>
           </div>
 
@@ -81,7 +102,7 @@ export default function ResearchPage() {
             </div>
             <div>
               <dt className="text-muted">Status</dt>
-              <dd className="text-text">Defended · 2025</dd>
+              <dd className="text-text">Defended (May, 2025)</dd>
             </div>
           </dl>
 
