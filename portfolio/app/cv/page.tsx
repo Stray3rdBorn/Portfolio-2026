@@ -6,6 +6,10 @@ import { Button } from "@/components/ui/Button";
 import { Download } from "lucide-react";
 import dynamic from "next/dynamic";
 
+export const metadata = {
+  title: "CV",
+};
+
 // Dynamically import the viewer so it doesn't load until needed
 const PDFViewer = dynamic(
   () => import("./PDFViewer").then((mod) => mod.PDFViewer),
