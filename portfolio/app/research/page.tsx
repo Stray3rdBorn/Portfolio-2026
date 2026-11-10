@@ -1,4 +1,5 @@
 import { Section } from "@/components/ui/Section";
+import { PDFViewer } from "./PDFViewer";
 
 export const metadata = {
   title: "Research",
@@ -137,6 +138,10 @@ export default function ResearchPage() {
             <span className="text-accent">Status:</span> In progress
           </p>
         </div>
+      </div>
+      <div className="mt-20 border-t border-border pt-16">
+        <h2 className="font-serif text-3xl font-medium">Thesis Paper</h2>
+        <PDFViewer src="/thesis.pdf" />
       </div>
     </Section>
   );
