@@ -12,7 +12,7 @@ export async function Footer() {
 
   return (
     <footer className="border-t border-surface bg-bg">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
+      <div className="mx-auto font-semibold flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
         <p className="text-sm text-muted">
           © {currentYear} MD Wahidul Islam | All rights reserved.
         </p>
