@@ -1,6 +1,8 @@
 import { Section } from "@/components/ui/Section";
 import { CVContent } from "./CVContent";
 
+export const instant = false;
+
 export const metadata = {
   title: "CV",
 };
