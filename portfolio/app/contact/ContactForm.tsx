@@ -16,7 +16,7 @@ export function ContactForm() {
     const formData = new FormData(form);
 
     const data = {
-      access_key: "11d6f6e8-95e1-44a8-9248-d303ba8c3078",
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
