@@ -20,11 +20,6 @@ export function PDFViewer({ src }: { src: string }) {
   return (
     <div className="w-full h-[80vh] rounded-2xl border border-border overflow-hidden bg-surface">
       <iframe src={src} className="w-full h-full" title="Thesis PDF" />
-      <iframe
-        src={`${src}#toolbar=0&navpanes=0&scrollbar=0`}
-        className="w-full h-full"
-        title="Thesis PDF"
-      />
     </div>
   );
 }
