@@ -140,7 +140,13 @@ export default function ResearchPage() {
         </div>
       </div>
       <div className="mt-20 border-t border-border pt-16">
-        <h2 className="font-serif text-3xl font-medium">Thesis Paper</h2>
+        <h2 className="font-serif text-3xl font-medium">
+          Read the Whole Thing
+        </h2>
+        <p className="mt-2 text-muted mb-8">
+          The full 70 page paper, including the literature review, methodology,
+          and results.
+        </p>
         <PDFViewer src="/thesis.pdf" />
       </div>
     </Section>
