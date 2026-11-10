@@ -20,9 +20,9 @@ export default async function ProjectPage({ params }: Props) {
     <Section className="pt-32">
       <Link
         href="/projects"
-        className="text-sm text-accent hover:underline mb-8 inline-block"
+        className="text-sm font-semibold text-accent hover:underline mb-8 inline-block"
       >
-        ← Back to projects
+        ← Back to Projects
       </Link>
 
       <h1 className="font-serif text-4xl md:text-5xl font-medium">
@@ -30,7 +30,7 @@ export default async function ProjectPage({ params }: Props) {
       </h1>
       <p className="mt-4 text-muted">{project.year}</p>
 
-      <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed">
+      <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed text-justify">
         {project.longDescription.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
@@ -39,12 +39,12 @@ export default async function ProjectPage({ params }: Props) {
       <div className="mt-10 flex flex-wrap gap-4">
         {project.liveUrl && (
           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="primary">Live Site</Button>
+            <Button variant="primary">Download & Play</Button>
           </a>
         )}
         {project.githubUrl && (
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="ghost">View Code</Button>
+            <Button variant="ghost">View Source Code</Button>
           </a>
         )}
       </div>
