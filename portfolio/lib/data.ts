@@ -67,6 +67,22 @@ export const projects: Project[] = [
     year: 2026,
   },
   {
+    slug: "portfolio-2026",
+    title: "My Portfolio",
+    description:
+      "A fully custom portfolio site built with Next.js, TypeScript and Tailwind, a dynamic dark mode system, deployed on Vercel.",
+    longDescription: [
+      "This is the site you are currently on. I built it from scratch using Next.js 16 (App Router), TypeScript, and Tailwind CSS v4. I wanted a personal space that felt like a hybrid of a resume, a project showcase, and a research archive, without relying on a generic template.",
+      "The design system is built on CSS variables. I built a custom light and dark theme where every color (background, surface, border, text, accent) is a single variable that swaps when the theme changes. The light mode uses an off white, chocolate and red palette, while the dark mode uses a dark gray and turquoise palette. The rest of the styling is handled through Tailwind utility classes, and the theme toggle uses next-themes to persist the choice.",
+      "The site is deployed on Vercel and updates automatically on every push to the main branch. It includes dynamic routing for project details, a PDF viewer for my CV and thesis, and a fully functional contact form powered by Web3Forms.",
+    ],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    githubUrl: "https://github.com/Stray3rdBorn/Portfolio-2026",
+    liveUrl: "https://wahidihan.vercel.app",
+    liveLabel: "View Live Site",
+    year: 2026,
+  },
+  {
     slug: "emotion-analytics",
     title: "Real-Time Multimodal Emotion Analytics",
     description:
