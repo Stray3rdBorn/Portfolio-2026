@@ -20,10 +20,13 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Redis",
       "Docker",
+      "Render",
+      "Cloudflare Pages",
+      "Neon",
     ],
     githubUrl: "https://github.com/Stray3rdBorn/2D-Game-Project-in-Pygame",
-    liveUrl:
-      "https://github.com/Stray3rdBorn/2D-Game-Project-in-Pygame/releases/latest",
+    liveUrl: "https://decadome.pages.dev/",
+    liveLabel: "Download & Play",
     year: 2026,
   },
   {
@@ -47,6 +50,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Stray3rdBorn/messaging-app",
     liveUrl: "https://campfire-dcsw.onrender.com",
+    liveLabel: " View Live site",
     year: 2026,
   },
   {

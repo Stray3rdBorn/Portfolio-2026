@@ -5,6 +5,7 @@ export interface Project {
   longDescription: string[]; // Changed to array for multiple paragraphs
   tags: string[];
   image?: string; // Added ? because not all projects have images
+  liveLabel?: string;
   liveUrl?: string;
   githubUrl?: string;
   year: number;
