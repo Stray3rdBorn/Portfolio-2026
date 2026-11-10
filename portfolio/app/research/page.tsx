@@ -23,7 +23,8 @@ export default function ResearchPage() {
         <div className="rounded-2xl border border-border bg-surface p-8">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h2 className="font-serif text-2xl font-medium text-text">
-              Towards Real-Time Emotion Analytics
+              Towards Real-Time Emotion Analytics: Integrating Facial Landmarks
+              and Speech Prosody
             </h2>
             <span className="text-sm text-muted">2025</span>
           </div>
