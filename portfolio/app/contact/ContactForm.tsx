@@ -70,7 +70,7 @@ export function ContactForm() {
           type="email"
           id="email"
           name="email"
-          maxLength={20}
+          maxLength={30}
           required
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
@@ -91,6 +91,14 @@ export function ContactForm() {
           className="w-full rounded-xl border border-border bg-bg text-text px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent"
         />
       </div>
+      <input
+        type="checkbox"
+        name="botcheck"
+        className="hidden"
+        style={{ display: "none" }}
+        tabIndex={-1}
+        autoComplete="off"
+      />
       <Button
         type="submit"
         variant="primary"
