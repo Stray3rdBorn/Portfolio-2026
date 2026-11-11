@@ -24,27 +24,42 @@ export function Header() {
   const [mounted, setMounted] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Prevent hydration mismatch
   useEffect(() => setMounted(true), []);
 
-  // Close mobile menu when path changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface/80 bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-bg/80 backdrop-blur-md pt-[env(safe-area-inset-top)]">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 relative">
+        {/* Left: Mobile Menu Toggle */}
+        <div className="flex items-center md:hidden z-50">
+          <button
+            className="rounded-full p-2 text-text hover:text-accent transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
+          </button>
+        </div>
+
         {/* Logo / Name */}
-        <Link
-          href="/"
-          className="font-serif text-2xl font-semibold tracking-tight text-text"
-        >
-          MD Wahidul Islam
-        </Link>
+        <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:flex-1">
+          <Link
+            href="/"
+            className="font-serif text-lg md:text-xl font-semibold tracking-tight text-text whitespace-nowrap"
+          >
+            MD WAHIDUL ISLAM
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 flex-1 justify-center">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -59,58 +74,56 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Theme Toggle */}
-        <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="rounded-full p-2 text-muted hover:text-accent transition-colors"
-          aria-label="Toggle theme"
-        >
-          {mounted && (
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="12" cy="12" r="9" />
-              <path
-                d="M12 3a9 9 0 0 0 0 18z"
-                fill="currentColor"
-                stroke="none"
-              />
-            </svg>
-          )}
-        </button>
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden rounded-full p-2 text-muted hover:text-accent transition-colors"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? (
-            <X className="w-5 h-5" />
-          ) : (
-            <Menu className="w-5 h-5" />
-          )}
-        </button>
+        {/* Right: Theme Toggle */}
+        <div className="flex items-center justify-end md:flex-1">
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="rounded-full p-2 text-muted hover:text-accent transition-colors"
+            aria-label="Toggle theme"
+          >
+            {mounted && (
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path
+                  d="M12 3a9 9 0 0 0 0 18z"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
-      {/* Mobile Navigation Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-surface">
-          <nav className="flex flex-col px-4 py-4 space-y-4">
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className={cn(
+          "absolute top-full left-0 w-64 md:hidden overflow-hidden transition-all duration-500 ease-out origin-top",
+          isMobileMenuOpen
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 -translate-y-3 scale-95 pointer-events-none",
+        )}
+      >
+        <div className="border-r border-b border-border bg-bg backdrop-blur-2xl shadow-2xl rounded-br-2xl">
+          <nav className="flex flex-col px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-base font-medium transition-colors",
+                  "px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:text-accent",
                   pathname === item.href
-                    ? "text-accent"
-                    : "text-text hover:text-accent",
+                    ? "bg-accent/20 text-accent"
+                    : "text-muted",
                 )}
               >
                 {item.label}
@@ -118,7 +131,7 @@ export function Header() {
             ))}
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
