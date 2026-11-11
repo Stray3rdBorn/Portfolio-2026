@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { projects } from "@/lib/data";
 
 export const instant = false;
-export const dynamic = "force-dynamic";
 
 interface Props {
   params: Promise<{ slug: string }>;
