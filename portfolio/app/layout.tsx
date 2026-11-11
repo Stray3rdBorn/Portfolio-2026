@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wahidihan.vercel.app"), // your real Vercel URL
+  metadataBase: new URL("https://wahidihan.vercel.app"),
   title: {
     default: "MD Wahidul Islam | Portfolio",
     template: "%s | MD Wahidul Islam",
