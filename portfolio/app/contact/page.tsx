@@ -14,8 +14,8 @@ export default function ContactPage() {
         </h1>
 
         <p className="mt-6 text-lg text-muted leading-relaxed">
-          Have a project in mind or just want to say hello? I would love to hear
-          from you.
+          Have a project in mind, or want to collaborate, or just want to say
+          hello? I would love to hear from you.
         </p>
 
         {/* Kept as a separate client component so the page stays server-rendered */}

@@ -116,10 +116,10 @@ export const projects: Project[] = [
 export const interests: Interest[] = [
   {
     id: "1",
-    title: "Elden Ring & FromSoftware",
+    title: "Soulsborne & Soulslike Games",
     category: "Gaming",
     description:
-      "I love the world-building, difficulty, and quiet storytelling.",
+      "Elden Ring is my all time favorite game. Dark Souls 3 comes close, but Elden Ring has a special place in my heart, and I hold both very dearly. I love the world-building, difficulty, and quiet lore. Above all, I am a sucker for difficult games. Hollow Knight is another one of my picks in the indie category.",
   },
   {
     id: "2",
