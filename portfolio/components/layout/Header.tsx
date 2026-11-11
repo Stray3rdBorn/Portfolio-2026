@@ -113,7 +113,7 @@ export function Header() {
             : "opacity-0 -translate-y-3 scale-95 pointer-events-none",
         )}
       >
-        <div className="border-r border-b border-border bg-bg backdrop-blur-2xl shadow-2xl rounded-br-2xl">
+        <div className="border-r border-b border-border bg-bg/99 backdrop-blur-5xl shadow-2xl rounded-br-2xl">
           <nav className="flex flex-col px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
