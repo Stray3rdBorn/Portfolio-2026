@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -21,9 +22,15 @@ export function Header() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Prevent hydration mismatch
   useEffect(() => setMounted(true), []);
+
+  // Close mobile menu when path changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-surface/80 bg-bg/80 backdrop-blur-md">
@@ -78,7 +85,40 @@ export function Header() {
             </svg>
           )}
         </button>
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden rounded-full p-2 text-muted hover:text-accent transition-colors"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? (
+            <X className="w-5 h-5" />
+          ) : (
+            <Menu className="w-5 h-5" />
+          )}
+        </button>
       </div>
+      {/* Mobile Navigation Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-border bg-surface">
+          <nav className="flex flex-col px-4 py-4 space-y-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "text-base font-medium transition-colors",
+                  pathname === item.href
+                    ? "text-accent"
+                    : "text-text hover:text-accent",
+                )}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

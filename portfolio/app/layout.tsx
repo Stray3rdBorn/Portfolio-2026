@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   },
   description:
     "Full Stack Software Developer solving real world problems building web applications, command-line tools & games for fun.",
+  other: {
+    viewport:
+      "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover",
+  },
 };
 export default function RootLayout({
   children,
