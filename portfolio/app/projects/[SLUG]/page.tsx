@@ -5,6 +5,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { projects } from "@/lib/data";
 
+export const instant = false;
 interface Props {
   params: Promise<{ slug: string }>;
 }

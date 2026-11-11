@@ -36,7 +36,7 @@ export function Header() {
         {/* Left: Mobile Menu Toggle */}
         <div className="flex items-center md:hidden z-50">
           <button
-            className="rounded-full p-2 text-text hover:text-accent transition-colors"
+            className="rounded-full p-2 text-muted hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -48,18 +48,18 @@ export function Header() {
           </button>
         </div>
 
-        {/* Logo / Name */}
+        {/* Logo / Name: grows on desktop so the nav and theme toggle sit at the right edge */}
         <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:flex-1">
           <Link
             href="/"
-            className="font-serif text-lg md:text-xl font-semibold tracking-tight text-text whitespace-nowrap"
+            className="font-serif text-lg lg:text-xl font-semibold tracking-tight text-text whitespace-nowrap"
           >
             MD WAHIDUL ISLAM
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 flex-1 justify-center">
+        {/* Desktop Navigation: only as wide as its links, tighter gap on medium screens to fit beside the logo */}
+        <nav className="hidden md:flex items-center gap-4 lg:gap-8">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -74,17 +74,19 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Right: Theme Toggle */}
-        <div className="flex items-center justify-end md:flex-1">
+        {/* Right: Theme Toggle. Left margin on desktop spaces it from the last nav link */}
+        <div className="flex items-center justify-end md:ml-2 lg:ml-6">
+          {/*button size keeps the nav from shifting when the icon appears after mount */}
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="rounded-full p-2 text-muted hover:text-accent transition-colors"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-muted hover:text-accent transition-colors"
             aria-label="Toggle theme"
           >
+            {/* Icon renders only after mount to avoid a theme mismatch on first load */}
             {mounted && (
               <svg
-                width="18"
-                height="18"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -107,13 +109,14 @@ export function Header() {
       {/* Mobile Menu Dropdown */}
       <div
         className={cn(
-          "absolute top-full left-0 w-64 md:hidden overflow-hidden transition-all duration-500 ease-out origin-top",
+          "absolute top-full left-0 w-64 md:hidden overflow-hidden transition-all duration-200 ease-out origin-top",
           isMobileMenuOpen
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 -translate-y-3 scale-95 pointer-events-none",
         )}
       >
-        <div className="border-r border-b border-border bg-bg/99 backdrop-blur-5xl shadow-2xl rounded-br-2xl">
+        {/* Solid background so page text behind the panel stays hidden */}
+        <div className="border-r border-b border-border bg-bg shadow-2xl rounded-br-2xl">
           <nav className="flex flex-col px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
