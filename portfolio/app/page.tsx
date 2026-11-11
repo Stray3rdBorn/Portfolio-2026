@@ -39,7 +39,7 @@ export default function HomePage() {
       {/* Featured Projects */}
       <Section className="bg-surface">
         <div className="flex items-end justify-between mb-12">
-          <h2 className="font-serif text-3xl font-medium">Selected Work</h2>
+          <h2 className="font-serif text-3xl font-medium">Featured Work</h2>
           <Link
             href="/projects"
             className="text-sm font-medium text-accent hover:underline"
