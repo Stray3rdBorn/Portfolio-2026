@@ -11,13 +11,10 @@ export async function Footer() {
   const currentYear = await getCurrentYear();
 
   return (
-    <footer className="border-t border-surface bg-bg">
+    <footer className="border-t border-border bg-bg">
       <div className="mx-auto font-semibold flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
-        <p className="text-sm text-muted">
-          © {currentYear} MD Wahidul Islam | All rights reserved.
-        </p>
-
-        <div className="flex gap-6">
+        {/* Links */}
+        <div className="flex flex-wrap justify-center gap-6 order-1 md:order-2">
           <a
             href="https://www.facebook.com/share/1HKVK2JHYB"
             target="_blank"
@@ -51,6 +48,11 @@ export async function Footer() {
             Instagram
           </a>
         </div>
+
+        {/* Copyright */}
+        <p className="text-sm text-muted order-2 md:order-1 text-center md:text-left">
+          © {currentYear} MD Wahidul Islam | All rights reserved.
+        </p>
       </div>
     </footer>
   );

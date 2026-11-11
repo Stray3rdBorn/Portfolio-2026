@@ -7,7 +7,7 @@ import { PDFViewer } from "./PDFViewer";
 export function CVContent() {
   return (
     <>
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="font-serif text-4xl md:text-5xl font-medium">
             Curriculum Vitae
