@@ -14,9 +14,11 @@ export default function InterestsPage() {
         <h1 className="font-serif text-4xl md:text-5xl font-medium">
           Interests
         </h1>
-        <p className="mt-6 text-lg text-muted">
+        <p className="mt-6 text-lg text-muted text-justify">
           The things that shape how I think, kept on a separate page so the rest
-          of the site can stay focused and professional.
+          of the site can stay focused and professional. Too much corporate junk
+          is not my forte. My own website surely must ooze of me, no? So here's
+          a little glimpse into my mind, see if you can hold a stare.
         </p>
       </div>
 

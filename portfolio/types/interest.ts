@@ -7,7 +7,8 @@ export type InterestCategory =
   | "History"
   | "Astronomy"
   | "Politics"
-  | "Other";
+  | "TV Shows"
+  | "Movies";
 
 export interface Interest {
   id: string;

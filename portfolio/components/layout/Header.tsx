@@ -52,7 +52,7 @@ export function Header() {
         <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:flex-1">
           <Link
             href="/"
-            className="font-serif text-lg lg:text-xl font-semibold tracking-tight text-text whitespace-nowrap"
+            className="font-serif text-lg lg:text-3xl font-semibold tracking-tight text-text whitespace-nowrap"
           >
             MD WAHIDUL ISLAM
           </Link>
