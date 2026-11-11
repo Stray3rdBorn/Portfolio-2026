@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: Props) {
       </h1>
       <p className="mt-4 text-muted">{project.year}</p>
 
-      <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed text-justify">
+      <div className="mt-10 max-w-5xl space-y-6 text-lg text-muted leading-relaxed text-justify">
         {project.longDescription.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
