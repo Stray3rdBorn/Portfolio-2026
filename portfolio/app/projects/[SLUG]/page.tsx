@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { projects } from "@/lib/data";
+import Image from "next/image";
 
 export const instant = false;
 
@@ -29,6 +30,51 @@ export default async function ProjectPage({ params }: Props) {
         {project.title}
       </h1>
       <p className="mt-4 text-muted">{project.year}</p>
+      {project.images && project.images.length > 0 && (
+        <div className="mt-10 space-y-8">
+          {project.images.map((img, index) => {
+            const captions: Record<string, string[]> = {
+              decadome: [
+                "DecaDome gameplay, surviving waves in the arena",
+                "Live leaderboard, scores ranked from Redis",
+              ],
+              campfire: [
+                "Rooms page, create or join by ID & edit or delete rooms",
+                "Chat room, real-time messages over WebSockets",
+              ],
+              "lua-project": [
+                "Gameplay, jumping over the enemy, 1 point per jump",
+                "Game over, instant restart loop",
+              ],
+              "portfolio-2026": [
+                "Home page, light mode with red accent",
+                "Projects page, dark mode with turquoise accent",
+              ],
+            };
+            const caption = captions[project.slug]?.[index] ?? "";
+
+            return (
+              <div key={img}>
+                <div className="rounded-2xl border border-border overflow-hidden bg-surface">
+                  <Image
+                    src={img}
+                    alt={`${project.title} screenshot ${index + 1}`}
+                    width={1600}
+                    height={900}
+                    className="w-full h-auto"
+                    priority={index === 0}
+                  />
+                </div>
+                {caption && (
+                  <p className="mt-2 text-sm text-muted text-center">
+                    {caption}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       <div className="mt-10 max-w-3xl space-y-6 text-lg text-muted leading-relaxed text-justify">
         {project.longDescription.map((paragraph, index) => (

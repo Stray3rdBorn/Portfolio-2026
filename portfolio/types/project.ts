@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   longDescription: string[]; // Changed to array for multiple paragraphs
   tags: string[];
-  image?: string; // Added ? because not all projects have images
+  images?: string[]; // Added ? because not all projects have images
   liveLabel?: string;
   liveUrl?: string;
   githubUrl?: string;

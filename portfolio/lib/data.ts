@@ -27,6 +27,10 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Stray3rdBorn/2D-Game-Project-in-Pygame",
     liveUrl: "https://decadome.pages.dev/",
     liveLabel: "Download & Play",
+    images: [
+      "/projects/decadome-gameplay.png",
+      "/projects/decadome-leaderboard.png",
+    ],
     year: 2026,
   },
   {
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Stray3rdBorn/messaging-app",
     liveUrl: "https://campfire-dcsw.onrender.com",
     liveLabel: " View Live site",
+    images: ["/projects/campfire-rooms.png", "/projects/campfire-chat.png"],
     year: 2026,
   },
   {
@@ -64,6 +69,7 @@ export const projects: Project[] = [
     ],
     tags: ["Lua", "Love2D"],
     githubUrl: "https://github.com/Stray3rdBorn/Love2d-Endless-Runner-Sandbox",
+    images: ["/projects/lua-gameplay.png", "/projects/lua-gameover.png"],
     year: 2026,
   },
   {
@@ -80,6 +86,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Stray3rdBorn/Portfolio-2026",
     liveUrl: "https://wahidihan.vercel.app",
     liveLabel: "View Live Site",
+    images: ["/projects/portfolio-light.png", "/projects/portfolio-dark.png"],
     year: 2026,
   },
   {
