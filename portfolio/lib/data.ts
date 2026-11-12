@@ -304,32 +304,32 @@ export const interests: Interest[] = [
       {
         title: "Akumetsu (2002)",
         description:
-          "Masked vigilantes hunting corrupt elites in a Japan collapsing under greed. Extremely violent and openly political, and it is wrong and satisfying in equal measure.",
+          "Masked vigilantes hunting corrupt elites in a Japan collapsing under greed. Extremely violent and openly political, and it is right and satisfying in equal measure.",
       },
       {
         title: "Tokyo Ghoul (2011)",
         description:
-          "Yes, the edgelord gateway, and I am not embarrassed. Kaneki's spiral is still one of the best character breakdowns in manga, and the idea of belonging to neither side stuck with me.",
+          "Yes, the edgelord gateway, and I am not embarrassed. Kaneki's spiral is still one of the best character breakdowns in manga, and the idea of belonging to neither side is genius. It speaks to me.",
       },
       {
         title: "Attack on Titan (2009)",
         description:
-          "Every theory I had was wrong, which is the best compliment a story can get. The world slowly stops having heroes and villains, only people with reasons, and the ending is still argued about like it is politics.",
+          "Every theory I had was wrong, which is the best compliment a story can get. However, in this case, my theory for the ending was far superior. A truly disappointing ending to what is otherwise a masterpiece by Isayama. If only he had the guts to do what had to be done.",
       },
       {
         title: "Ravages of Time (2006)",
         description:
-          "Three Kingdoms retold as a war of minds, where the real battles happen in the heads of strategists before a single sword is drawn. Slow, dense, and addictive if you like politics and schemes.",
+          "Three Kingdoms retold as a war of minds, where the real battles happen in the heads of strategists before a single sword is drawn. I suppose I have a hidden thing for stories told through multiple perspectives. It is an absolute genius way to tell a story.",
       },
       {
         title: "Usogui (2006)",
         description:
-          "Gambling mind games where every game is a trap inside a trap. Baku is easily one of the most unhinged protagonists I know, and I love him for it.",
+          "Gambling mind games where every game is a trap inside a trap. Baku is easily one of the most unhinged protagonists I know, and I love him for it. I play eFootball, which is also a gambling game. Too bad I'm not Baku.",
       },
       {
         title: "Homunculus (2003)",
         description:
-          "A man lets a stranger drill a hole in his skull to see what people are really like, and the manga makes you wonder what yours would look like. Weird, uncomfortable, and nothing else I have read feels like it.",
+          "A man lets a stranger drill a hole in his skull to see what people are really like, and the manga makes you wonder what yours would look like. Quite a unique way of telling a psychological character driven story. But I wouldn't want a hole in my head. Not good for jobs.",
       },
     ],
   },
