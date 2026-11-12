@@ -119,92 +119,277 @@ export const interests: Interest[] = [
     title: "Elden Ring",
     category: "Gaming",
     description:
-      "Soulsborne & Soulslike games are my jam. Elden Ring is my all time favorite. Dark Souls 3 comes close, but Elden Ring has a special place in my heart, and I hold both very dearly. I love the world-building, difficulty, and quiet lore. Above all, I am a sucker for difficult games. Hollow Knight is another one of my picks in the indie category. These games taught me about perseverence",
+      "Soulsborne & Soulslike games are my jam. Elden Ring is my all time favorite. Dark Souls 3 comes close, but Elden Ring has a special place in my heart, and I hold both very dearly. I love the world building, difficulty, and quiet lore. Above all, I am a sucker for difficult games. Hollow Knight is another one of my picks in the indie category. Games can change your mindset just like books, movies, and songs. They can shape your world, teach you perspective, and give you knowledge of different worlds, countries, cultures, and traditions. The difference is that with games, you can interact with said countries and cultures yourself, which is a different level of immersion compared to books and movies, not to discredit them, though.",
   },
   {
     id: "2",
     title: "Sekiro: Shadows Die Twice",
     category: "Gaming",
     description:
-      "Another one of my absolute favorites. There is something about sword games that I love, and the metal clashing is music to my ears. These games are also known for their immaculate scores. They taught me perseverance, emotional control, resilience through failure, and deliberate problem solving, embodying the age old saying 'failure is data'. Above all, they taught me patience, which is valuable in work, studies, and relationships.",
+      "Another one of my absolute favorites. There is something about sword games that I love, and the metal clashing is music to my ears. These games are also known for their immaculate scores. They taught me perseverance, emotional control, resilience through failure, risk and resource management, and deliberate problem solving, embodying the age old saying 'failure is data', quite fitting for my Computer Science field. Above all, they taught me patience, which is valuable in work, studies, friends, and relationships.",
   },
   {
     id: "3",
+    // Placeholder, replace title and description
+    title: "Crime and Punishment by Fyodor Dostoevsky (1866)",
+    category: "Books",
+    description:
+      "Dostoevsky throws you inside the head of a broke student who thinks being smart puts him above basic morality. Spoiler: it doesn't. Watching Raskolnikov crack under his own logic is a blunt reminder that raw intellect without a conscience just eats you alive, and real redemption hurts way more than pride ever will. Sometimes the heaviest prison is just your own mind. With all that being said, though, most teenagers go through this smart-rebellious phase, we call them edgelords in this century. It's not a bad phase, it teaches us a lot of things, it is only bad when people build their indentities around it, instead of learning the lessions.",
+    quote:
+      "Pain and suffering are always inevitable for a broad consciousness and a deep heart. Truly great men, it seems to me, must feel great sorrow on earth.",
+  },
+  {
+    id: "4",
+    title: "1984 by George Orwell (1949)",
+    category: "Books",
+    description:
+      "Orwell paints a bleak world where a totalitarian regime doesn't just police your actions; it rewrites history and shrinks language until rebellious thoughts become impossible to form. Watching Winston get broken from the inside out is a chilling reminder that true control isn't about chains or violence, it's about making people willingly surrender their own minds to comfortable lies. It starts from the moment a child is born. Some break free of their own accord, some can never break free, and some willingly accept the indoctrination because going against it carries a cost too high.",
+    quote:
+      "Power is not a means; it is an end. One does not establish a dictatorship in order to safeguard a revolution; one makes the revolution in order to establish the dictatorship.",
+  },
+  {
+    id: "5",
+    // Placeholder, replace title and description
+    title: "The Trial by Franz Kafka (1925)",
+    category: "Books",
+    description:
+      "Kafka drops an ordinary guy into a faceless legal nightmare where he's arrested for a crime nobody will ever explain to him. No villain, just endless bureaucracy grinding him down. It’s a sharp look at how systems trap people using invisible rules and their own guilt, and a quiet warning never to waste your life begging for approval from broken machines. The Trial mirrors the corporate-cog-in-the-machine life people lead in this century. To go against the flow is to shoot yourself in the foot for most people, and of course, there are exceptions. I suppose I am not one of them.",
+    quote:
+      "The right perception of any matter and a misunderstanding of the same matter do not wholly exclude each other.",
+  },
+  {
+    id: "6",
+    // Placeholder, replace title and description
+    title: "No Longer Human by Osamu Dazai (1948)",
+    category: "Books",
+    description:
+      "Dazai strips away all polite social lies to show what it feels like to be fundamentally alienated from normal human society. Watching Yozo hide behind jokes just to survive is brutal, honest, and deeply uncomfortable. It’s a raw reminder that wearing a fake mask just to fit in slowly hollows you out, and pretending to belong eventually costs you yourself. But that's easier said than done. Almost everyone, at some point in their life, has had to fake themselves to fit into a social circle out of fear of being alone, to save a relationship, to not dishonor their family, or even for jobs. In the end, even with all the fakeness, if you have a grip on yourself, then that's enough.",
+    quote:
+      "Society? Isn't 'society' just the individual?. Cowards fear even happiness; they can get hurt even by cotton wool.",
+  },
+  {
+    id: "7",
     title:
       "Beyond Good and Evil: Prelude to a Philosophy of the Future by Friedrich Nietzsche (1886)",
-    category: "Books",
+    category: "Philosophy",
     description:
       "Nietzsche takes a sledgehammer to inherited morality, religion, and herd mentality, exposing how rigid labels of good and evil just mask people’s hidden motives. No sugarcoating, no comforting dogma. It’s a sharp reminder to tear down hand-me-down beliefs, think without training wheels, and forge your own values instead of swallowing whatever safe, pre-packaged rules the crowd expects you to follow. If you read around, you probably caught a reference to one of his greatest quotes.",
     quote:
       "Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you. (Aphorism 146)",
   },
   {
-    id: "4",
-    // Placeholder, replace title and description
-    title: "Crime and Punishment by Fyodor Dostoevsky (1866)",
-    category: "Books",
-    description:
-      "Dostoevsky drags you straight into the feverish mind of a broke student who thinks cold logic puts him above basic human morality. Spoiler: it doesn't. Watching Raskolnikov unravel under the weight of his own rationalizations is a brutal reminder that intellect without conscience rots from the inside out—and that real redemption hurts far more than pride ever could.",
-    quote:
-      "Pain and suffering are always inevitable for a broad consciousness and a deep heart. Truly great men, it seems to me, must feel great sorrow on earth.",
-  },
-  // Movies
-  {
-    id: "5",
-    // Placeholder, replace title and description
-    title: "Movie Title 1",
-    category: "Movies",
-    description: "Placeholder: a line or two on why this movie matters to you.",
-  },
-  {
-    id: "6",
-    // Placeholder, replace title and description
-    title: "Movie Title 2",
-    category: "Movies",
-    description: "Placeholder: a line or two on why this movie matters to you.",
-  },
-  // TV Shows
-  {
-    id: "7",
-    // Placeholder, replace title and description
-    title: "TV Show Title 1",
-    category: "TV Shows",
-    description: "Placeholder: a line or two on why this show matters to you.",
-  },
-  {
     id: "8",
-    // Placeholder, replace title and description
-    title: "TV Show Title 2",
-    category: "TV Shows",
-    description: "Placeholder: a line or two on why this show matters to you.",
+    title: "The Myth of Sisyphus by Albert Camus (1942)",
+    category: "Philosophy",
+    description:
+      "Camus stares straight at an indifferent universe and asks the only question that actually matters: why keep going when life has no built in meaning? Instead of selling comforting lies or self pity, he argues for pure defiance. You accept the absurdity, drop the illusions, and push the boulder anyway just to prove the universe does not own you. This way of thinking is very beneficial to everyday life. I prefer steering the wheel of my own life rather than wallowing in misery and being pessimistic about things larger than life. I always say, learn as much as you can, but never let a single thing narrow your perspective. Yes, you can quote me on that.",
+    quote:
+      "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.",
   },
-  // Anime
   {
     id: "9",
-    title: "Attack on Titan",
-    category: "Anime",
+    title: "Breaking Bad (2008)",
+    category: "TV Shows",
     description:
-      "Masterful pacing, moral complexity, and unforgettable payoff.",
+      "Walter White is Raskolnikov with a chemistry degree. Need starts the story, but ego finishes it, and that is what stuck with me: most people fall because of pride, not circumstance. I fall because of both.",
   },
   {
     id: "10",
-    // Placeholder, replace title and description
-    title: "Anime Title 2",
-    category: "Anime",
-    description: "Placeholder: a line or two on why this anime matters to you.",
+    title: "Dark (2017)",
+    category: "TV Shows",
+    description:
+      "Time travel done right, and cold enough to make your head hurt, not my head though. I still remember being able to predict the infinity sign loop of different worlds intersecting. Not really a fan of deterministic philosophy but I get the idea.",
   },
-  // Philosophy
+  {
+    id: "14",
+    title: "Monster: The Jeffrey Dahmer Story (2022)",
+    category: "TV Shows",
+    description:
+      "If you haven't recognized the pattern yet, let me spell it out for you: I have knowledge about every famous & not so famous serial killer. I have always had a weird fascination with learning about these criminals. So I don't repeat their mistakes.",
+  },
+  {
+    id: "15",
+    title: "Mouse (2021)",
+    category: "TV Shows",
+    description:
+      "Korean thrillers just always hit that spot, don't they? Psychopaths are born & sociopaths are made. The conclusion isn't comfortable and it shouldn't be.",
+  },
   {
     id: "11",
-    title: "Meditations – Marcus Aurelius",
-    category: "Philosophy",
-    description: "A book I return to whenever I need clarity and calm.",
+    title: "Anime Favorites",
+    category: "Anime",
+    description:
+      "What? Anime is the trend now but I'm an old fan. And I always consider it a better medium than most countries' media.",
+    list: [
+      {
+        title: "Monster (2004)",
+        description:
+          "Most definitely one of the greatest written villains in all of fiction, by Naoki Urasawa. This is one of those masterpieces that you watch for the villain, and of course, the narrative and Tenma's moral dilemma (meh).",
+      },
+      {
+        title: "Neon Genesis Evangelion (1995)",
+        description:
+          "Giant robots on the outside, a therapy session on the inside. It made me realize loneliness and the fear of getting close can live in the same person, which is uncomfortable and true.",
+      },
+      {
+        title: "Code Geass (2006)",
+        description:
+          "Lelouch plays war like a chess match and I was hooked. It left me arguing with myself about whether a good end can excuse rotten means, and my answer is yes. All hail Emperor Lelouch vi Britannia.",
+      },
+      {
+        title: "Orb: On the Movements of the Earth (2024)",
+        description:
+          "Every character picks truth over comfort, even when it costs them everything. It made me appreciate how much of what we know was paid for by people who refused to stay quiet.",
+      },
+      {
+        title: "Death Note (2006)",
+        description:
+          "Light is right, although his ego became his own demise, admittedly. However, Light is superior to both L and Near. You can debate me on that if you've got the guts.",
+      },
+      {
+        title: "Legend of the Galactic Heroes (1988)",
+        description:
+          "Easily one of the smartest things I have watched about politics. Nobody is purely good here, and it makes you sit with the fact that both freedom and strong rule have rot inside.",
+      },
+      {
+        title: "Vinland Saga (2019)",
+        description:
+          "Thorfinn's arc hit harder than any revenge story should. Real strength is putting the sword down, and the 'you have no enemies' line was one of the most self reflective moments of my life.",
+      },
+      {
+        title: "Steins;Gate (2011)",
+        description:
+          "Best show about time travel from a technical standpoint. You can't have your cake and eat it too. Doesn't make sense, does it? If it's my cake, you're damn right I can eat it too.",
+      },
+      {
+        title: "Hunter x Hunter (2011)",
+        description:
+          "The show that never needed to be edgy to be dark. I consider this one the great grandfather of how a shounen anime should be: it has world building, mystery, thrill, politics, and hype, everything.",
+      },
+      {
+        title: "Fullmetal Alchemist: Brotherhood (2009)",
+        description:
+          "I always believed in a saying that you must choose the path that seems the most difficult. And it ties into how you must sacrifice something of equal value to what you desire.",
+      },
+    ],
+  },
+  // Manga
+  {
+    id: "13",
+    title: "Manga Notables",
+    category: "Manga",
+    description:
+      "Ten manga for anyone who still thinks comics are only for kids. Slower than watching, and a lot of them hit harder than any adaptation could.",
+    list: [
+      {
+        title: "Vagabond (1998)",
+        description:
+          "Inoue's art is unreal, and watching Musashi chase being the strongest while slowly realizing it was never about the sword is something else. Still unfinished, and I am still angry about it.",
+      },
+      {
+        title: "Berserk (1989)",
+        description:
+          "The blueprint for everything I love about dark fantasy, Dark Souls included. Guts is basically Sisyphus with a sword the size of a door, and I mean that as the highest compliment. RIP Miura.",
+      },
+      {
+        title: "Kingdom (2006)",
+        description:
+          "Pure hype with actual brains behind it. A slave kid and a young king chasing the same dream of ending war, and the battles are planned so well you end up studying them.",
+      },
+      {
+        title: "20th Century Boys (1999)",
+        description:
+          "Urasawa again, because the man does not miss. A decades long mystery where childhood nostalgia turns into a doomsday cult, and the answer to who Friend is hurts more than it surprises.",
+      },
+      {
+        title: "Akumetsu (2002)",
+        description:
+          "Masked vigilantes hunting corrupt elites in a Japan collapsing under greed. Extremely violent and openly political, and it is wrong and satisfying in equal measure.",
+      },
+      {
+        title: "Tokyo Ghoul (2011)",
+        description:
+          "Yes, the edgelord gateway, and I am not embarrassed. Kaneki's spiral is still one of the best character breakdowns in manga, and the idea of belonging to neither side stuck with me.",
+      },
+      {
+        title: "Attack on Titan (2009)",
+        description:
+          "Every theory I had was wrong, which is the best compliment a story can get. The world slowly stops having heroes and villains, only people with reasons, and the ending is still argued about like it is politics.",
+      },
+      {
+        title: "Ravages of Time (2006)",
+        description:
+          "Three Kingdoms retold as a war of minds, where the real battles happen in the heads of strategists before a single sword is drawn. Slow, dense, and addictive if you like politics and schemes.",
+      },
+      {
+        title: "Usogui (2006)",
+        description:
+          "Gambling mind games where every game is a trap inside a trap. Baku is easily one of the most unhinged protagonists I know, and I love him for it.",
+      },
+      {
+        title: "Homunculus (2003)",
+        description:
+          "A man lets a stranger drill a hole in his skull to see what people are really like, and the manga makes you wonder what yours would look like. Weird, uncomfortable, and nothing else I have read feels like it.",
+      },
+    ],
   },
   {
     id: "12",
-    // Placeholder, replace title and description
-    title: "Philosophy Book Title 2",
-    category: "Philosophy",
-    description: "Placeholder: a line or two on why this book matters to you.",
+    title: "Movie Notables",
+    category: "Movies",
+    description:
+      "Ten films from the uncomfortable side of cinema. None of them make you feel better, and every one of them left something in my head.",
+    list: [
+      {
+        title: "Oldboy (2003)",
+        description:
+          "Revenge movies usually feel good. This one makes you feel dirty, and I respect it for that. I love it though. Sometimes you gotta be the karma itself.",
+      },
+      {
+        title: "Parasite (2019)",
+        description:
+          "A comedy that stops being funny right when you stop laughing. It is the sharpest film I have seen about class: the poor always end up fighting each other instead of the system.",
+      },
+      {
+        title: "Se7en (1995)",
+        description:
+          "I still think about that ending. Fincher refused to hand the audience a win, which proved that a film can be great without making anyone feel better. Sometimes evil wins. That's just the reality.",
+      },
+      {
+        title: "Taxi Driver (1976)",
+        description:
+          "Travis is not a monster, just a lonely guy with a plan. Isolation can turn a mind against itself, a theme I keep finding in everything I love. Must be why I despise isolation myself.",
+      },
+      {
+        title: "Incendies (2010)",
+        description:
+          "Quietly the most devastating film I have watched. The cycle of hatred gets passed down like an inheritance, and someone has to be brave enough to stop passing it on, but nobody who suffered wants to be that someone.",
+      },
+      {
+        title: "Zodiac (2007)",
+        description:
+          "No satisfying ending, and that is the point. It taught me that obsession will happily eat your life if you let it chase answers that may never exist.",
+      },
+      {
+        title: "Cure (1997)",
+        description:
+          "Not loud horror. It just sits in your head. Violence exists even in the most innocent, decent human being. The sooner people realize this, the better it is to be self aware of one's every decision, so it doesn't start a chain reaction of misfortune.",
+      },
+      {
+        title: "Prisoners (2013)",
+        description:
+          "A good man doing awful things for a good reason. Ah, the moral dilemma once again, such an ironic theme for creativity. You can't help but enjoy every iteration.",
+      },
+      {
+        title: "Monster (2023)",
+        description:
+          "Same story told three times, and each version convinces you that you know who the monster is. You are wrong every time. Same question as the anime, and I am not immune to judging people off half the story.",
+      },
+      {
+        title: "Audition (1999)",
+        description:
+          "Watch it blind. An hour of quiet romance lulls you, then it grabs you by the throat, and I admire how patient it is about it. And patience is one of my things, though not always.",
+      },
+    ],
   },
 ];

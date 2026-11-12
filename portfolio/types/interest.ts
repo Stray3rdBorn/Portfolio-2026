@@ -17,4 +17,5 @@ export interface Interest {
   description: string;
   quote?: string;
   image?: string;
+  list?: { title: string; description: string }[];
 }

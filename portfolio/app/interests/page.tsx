@@ -35,12 +35,30 @@ export default function InterestsPage() {
                 .map((item) => (
                   <div
                     key={item.id}
-                    className="rounded-2xl border border-border bg-surface p-6"
+                    className={`rounded-2xl border border-border bg-surface p-6 ${item.list ? "md:col-span-2" : ""}`}
                   >
                     <h3 className="text-lg font-medium">{item.title}</h3>
                     <p className="mt-2 text-muted text-justify">
                       {item.description}
                     </p>
+
+                    {/* Rows stacked in one column inside the card, separated by thin dividers */}
+                    {item.list && (
+                      <ul className="mt-6 divide-y divide-border">
+                        {item.list.map((entry) => (
+                          <li
+                            key={entry.title}
+                            className="py-4 first:pt-0 last:pb-0"
+                          >
+                            <h4 className="font-medium">{entry.title}</h4>
+                            <p className="mt-1 text-sm text-muted text-justify">
+                              {entry.description}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
                     {item.quote && (
                       <blockquote className="mt-3 border-l-2 pl-4 italic text-text">
                         "{item.quote}"
