@@ -47,6 +47,14 @@ export async function Footer() {
           >
             Instagram
           </a>
+          <a
+            href="https://www.youtube.com/@stray3rdborn36"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted hover:text-accent transition-colors"
+          >
+            Youtube
+          </a>
         </div>
 
         {/* Copyright */}
