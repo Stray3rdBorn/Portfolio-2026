@@ -116,10 +116,17 @@ export const projects: Project[] = [
 export const interests: Interest[] = [
   {
     id: "1",
-    title: "Soulsborne & Soulslike Games",
+    title: "Elden Ring",
     category: "Gaming",
     description:
-      "Elden Ring is my all time favorite game. Dark Souls 3 comes close, but Elden Ring has a special place in my heart, and I hold both very dearly. I love the world-building, difficulty, and quiet lore. Above all, I am a sucker for difficult games. Hollow Knight is another one of my picks in the indie category.",
+      "Soulsborne & Soulslike games are my jam. Elden Ring is my all time favorite. Dark Souls 3 comes close, but Elden Ring has a special place in my heart, and I hold both very dearly. I love the world-building, difficulty, and quiet lore. Above all, I am a sucker for difficult games. Hollow Knight is another one of my picks in the indie category. These games taught me about perseverence",
+  },
+  {
+    id: "2",
+    title: "Sekiro: Shadows Die Twice",
+    category: "Gaming",
+    description:
+      "Another one of my absolute favorites. There is something about sword games that I love, and the metal clashing is music to my ears. These games are also known for their immaculate scores. They taught me perseverance, emotional control, resilience through failure, and deliberate problem solving, embodying the age old saying 'failure is data'. Above all, they taught me patience, which is valuable in work, studies, and relationships.",
   },
   {
     id: "2",

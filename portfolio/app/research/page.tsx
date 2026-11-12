@@ -8,7 +8,7 @@ export const metadata = {
 export default function ResearchPage() {
   return (
     <Section className="pt-32">
-      <div className="max-w-3xl mb-16">
+      <div className="max-w-6xl mb-16">
         <h1 className="font-serif text-4xl md:text-5xl font-medium">
           Research
         </h1>
