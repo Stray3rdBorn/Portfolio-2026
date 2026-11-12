@@ -18,7 +18,8 @@ export default function InterestsPage() {
           The things that shape how I think, kept on a separate page so the rest
           of the site can stay focused and professional. Too much corporate junk
           is not my forte. My own website surely must ooze of me, no? So here's
-          a little glimpse into my mind, see if you can hold a stare.
+          a little glimpse into my mind, see if you can hold a stare. After work
+          & academics, you will always find me around here.
         </p>
       </div>
 
@@ -37,7 +38,14 @@ export default function InterestsPage() {
                     className="rounded-2xl border border-border bg-surface p-6"
                   >
                     <h3 className="text-lg font-medium">{item.title}</h3>
-                    <p className="mt-2 text-muted">{item.description}</p>
+                    <p className="mt-2 text-muted text-justify">
+                      {item.description}
+                    </p>
+                    {item.quote && (
+                      <blockquote className="mt-3 border-l-2 pl-4 italic text-text">
+                        "{item.quote}"
+                      </blockquote>
+                    )}
                   </div>
                 ))}
             </div>

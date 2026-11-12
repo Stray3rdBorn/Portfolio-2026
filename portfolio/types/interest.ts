@@ -15,5 +15,6 @@ export interface Interest {
   title: string;
   category: InterestCategory;
   description: string;
+  quote?: string;
   image?: string;
 }

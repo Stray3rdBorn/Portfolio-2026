@@ -129,34 +129,82 @@ export const interests: Interest[] = [
       "Another one of my absolute favorites. There is something about sword games that I love, and the metal clashing is music to my ears. These games are also known for their immaculate scores. They taught me perseverance, emotional control, resilience through failure, and deliberate problem solving, embodying the age old saying 'failure is data'. Above all, they taught me patience, which is valuable in work, studies, and relationships.",
   },
   {
-    id: "2",
-    title: "Meditations – Marcus Aurelius",
-    category: "Philosophy",
-    description: "A book I return to whenever I need clarity and calm.",
-  },
-  {
     id: "3",
-    title: "Cosmos & Space Documentaries",
-    category: "Astronomy",
-    description: "The scale of the universe never stops fascinating me.",
+    title:
+      "Beyond Good and Evil: Prelude to a Philosophy of the Future by Friedrich Nietzsche (1886)",
+    category: "Books",
+    description:
+      "Nietzsche takes a sledgehammer to inherited morality, religion, and herd mentality, exposing how rigid labels of good and evil just mask people’s hidden motives. No sugarcoating, no comforting dogma. It’s a sharp reminder to tear down hand-me-down beliefs, think without training wheels, and forge your own values instead of swallowing whatever safe, pre-packaged rules the crowd expects you to follow. If you read around, you probably caught a reference to one of his greatest quotes.",
+    quote:
+      "Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you. (Aphorism 146)",
   },
   {
     id: "4",
+    // Placeholder, replace title and description
+    title: "Crime and Punishment by Fyodor Dostoevsky (1866)",
+    category: "Books",
+    description:
+      "Dostoevsky drags you straight into the feverish mind of a broke student who thinks cold logic puts him above basic human morality. Spoiler: it doesn't. Watching Raskolnikov unravel under the weight of his own rationalizations is a brutal reminder that intellect without conscience rots from the inside out—and that real redemption hurts far more than pride ever could.",
+    quote:
+      "Pain and suffering are always inevitable for a broad consciousness and a deep heart. Truly great men, it seems to me, must feel great sorrow on earth.",
+  },
+  // Movies
+  {
+    id: "5",
+    // Placeholder, replace title and description
+    title: "Movie Title 1",
+    category: "Movies",
+    description: "Placeholder: a line or two on why this movie matters to you.",
+  },
+  {
+    id: "6",
+    // Placeholder, replace title and description
+    title: "Movie Title 2",
+    category: "Movies",
+    description: "Placeholder: a line or two on why this movie matters to you.",
+  },
+  // TV Shows
+  {
+    id: "7",
+    // Placeholder, replace title and description
+    title: "TV Show Title 1",
+    category: "TV Shows",
+    description: "Placeholder: a line or two on why this show matters to you.",
+  },
+  {
+    id: "8",
+    // Placeholder, replace title and description
+    title: "TV Show Title 2",
+    category: "TV Shows",
+    description: "Placeholder: a line or two on why this show matters to you.",
+  },
+  // Anime
+  {
+    id: "9",
     title: "Attack on Titan",
     category: "Anime",
     description:
       "Masterful pacing, moral complexity, and unforgettable payoff.",
   },
   {
-    id: "5",
-    title: "Political Philosophy & History",
-    category: "Politics",
-    description: "Understanding how societies organize themselves over time.",
+    id: "10",
+    // Placeholder, replace title and description
+    title: "Anime Title 2",
+    category: "Anime",
+    description: "Placeholder: a line or two on why this anime matters to you.",
+  },
+  // Philosophy
+  {
+    id: "11",
+    title: "Meditations – Marcus Aurelius",
+    category: "Philosophy",
+    description: "A book I return to whenever I need clarity and calm.",
   },
   {
-    id: "6",
-    title: "One Piece & Classic Manga",
-    category: "Manga",
-    description: "Long-form storytelling done at the highest level.",
+    id: "12",
+    // Placeholder, replace title and description
+    title: "Philosophy Book Title 2",
+    category: "Philosophy",
+    description: "Placeholder: a line or two on why this book matters to you.",
   },
 ];
