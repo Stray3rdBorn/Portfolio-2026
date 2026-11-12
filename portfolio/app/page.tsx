@@ -50,8 +50,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-3 text-muted leading-relaxed text-justify">
               Software Engineer/Developer roles of any kind are on the table,
-              with a soft spot for backend systems, game development, and AI &
-              machine learning. Open to both on-site & remote setups.
+              with a clear aim toward backend systems, game development, and AI
+              & machine learning. Open to both on-site & remote setups.
             </p>
 
             {/* Role and setup tags */}
