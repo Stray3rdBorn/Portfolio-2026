@@ -35,6 +35,52 @@ export default function HomePage() {
           </div>
         </div>
       </Section>
+      {/* Open to Opportunities */}
+      <Section>
+        <div className="flex flex-col gap-8 rounded-2xl border border-border bg-surface p-8 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            {/* Status label with a pulsing dot */}
+            <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-accent">
+              <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+              Open to Opportunities
+            </div>
+
+            <h2 className="mt-4 font-serif text-2xl md:text-3xl font-medium">
+              Looking for the right opportunity to learn and grow.
+            </h2>
+            <p className="mt-3 text-muted leading-relaxed text-justify">
+              Software Engineer/Developer roles of any kind are on the table,
+              with a soft spot for backend systems, game development, and AI &
+              machine learning. Open to both on-site & remote setups.
+            </p>
+
+            {/* Role and setup tags */}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[
+                "Any Software Engineer role",
+                "Full Stack Developer",
+                "Junior Developer",
+                "Entry Level",
+                "AI / ML",
+                "Hybrid",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-bg border border-border px-3 py-1 text-xs text-text"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <Link href="/contact" className="shrink-0">
+            <Button variant="primary" size="lg">
+              Get in Touch
+            </Button>
+          </Link>
+        </div>
+      </Section>
 
       {/* Featured Projects */}
       <Section className="bg-surface">
