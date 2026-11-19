@@ -9,4 +9,5 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   year: number;
+  draft?: boolean;
 }

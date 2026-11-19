@@ -111,8 +111,9 @@ export const projects: Project[] = [
       "https://github.com/Stray3rdBorn/Real-Time-Multimodal-Emotion-Analytics",
     year: 2025,
   },
+  // NEW-PROJECTS-GO-ABOVE
 ];
-
+export const publishedProjects = projects.filter((p) => !p.draft);
 export const interests: Interest[] = [
   {
     id: "1",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { projects } from "@/lib/data";
+import { publishedProjects } from "@/lib/data";
 
 export const metadata = {
   title: "Projects",
@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       </h1>
 
       <div className="grid gap-8 md:grid-cols-2">
-        {projects.map((project) => (
+        {publishedProjects.map((project) => (
           <Link
             key={project.slug}
             href={`/projects/${project.slug}`}

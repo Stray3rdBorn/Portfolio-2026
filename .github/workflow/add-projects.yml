@@ -1,0 +1,52 @@
+name: Add project card
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: "Repo name only, for example messaging-app"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  add-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build the draft card
+        env:
+          REPO_NAME: ${{ inputs.repo }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DATA_FILE: portfolio/lib/data.ts
+        run: node portfolio/scripts/add-project.mjs
+
+      - name: Open the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ inputs.repo }}
+        run: |
+          if git diff --quiet; then
+            echo "Nothing changed, no pull request needed."
+            exit 0
+          fi
+          BRANCH="add-project-${REPO_NAME}-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add portfolio/lib/data.ts
+          git commit -m "Add draft project card for ${REPO_NAME}"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Add project card: ${REPO_NAME}" \
+            --body "Draft card generated from the ${REPO_NAME} repo. Edit the text and images in lib/data.ts, remove the draft line, then merge to publish." \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$BRANCH"

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
-import { projects } from "@/lib/data";
+import { publishedProjects } from "@/lib/data";
 
 export const instant = false;
 interface Props {
@@ -11,14 +11,14 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return projects.map((project) => ({
+  return publishedProjects.map((project) => ({
     slug: project.slug,
   }));
 }
 
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === slug);
+  const project = publishedProjects.find((p) => p.slug === slug);
 
   if (!project) notFound();
 

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
-import { projects } from "@/lib/data";
+import { publishedProjects } from "@/lib/data";
 
 export default function HomePage() {
-  const featured = projects.slice(0, 2);
+  const featured = publishedProjects.slice(0, 2);
 
   return (
     <>
