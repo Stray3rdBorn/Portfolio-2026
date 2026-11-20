@@ -121,6 +121,16 @@ export const projects: Project[] = [
     year: 2026,
     draft: false,
   },
+  {
+    slug: "expense-tracker-in-rust",
+    title: "Expense Tracker In Rust",
+    description: "A small command line expense tracker I built in Rust. I type expenses one per line, they are saved to a JSON file, and the program prints every saved expense with a total. I made it to learn Rust fundamentals on a real problem: modules, enums, parsing, error handling, and saving data to disk.",
+    longDescription: ["A small command line expense tracker I built in Rust. I type expenses one per line, they are saved to a JSON file, and the program prints every saved expense with a total. I made it to learn Rust fundamentals on a real problem: modules, enums, parsing, error handling, and saving data to disk."],
+    tags: ["Rust"],
+    githubUrl: "https://github.com/Stray3rdBorn/Expense-Tracker-in-Rust",
+    year: 2026,
+    draft: true,
+  },
   // NEW-PROJECTS-GO-ABOVE
 ];
 export const publishedProjects = projects.filter((p) => !p.draft);
