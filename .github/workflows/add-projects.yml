@@ -38,6 +38,7 @@ jobs:
             echo "Nothing changed, no pull request needed."
             exit 0
           fi
+          REPO_NAME="${REPO_NAME#"${REPO_NAME%%[![:space:]]*}"}"
           BRANCH="add-project-${REPO_NAME}-${GITHUB_RUN_ID}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
