@@ -119,7 +119,7 @@ export const projects: Project[] = [
     tags: ["Rust"],
     githubUrl: "https://github.com/Stray3rdBorn/Log-analyzer-in-Rust",
     year: 2026,
-    draft: true,
+    draft: false,
   },
   // NEW-PROJECTS-GO-ABOVE
 ];
