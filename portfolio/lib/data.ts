@@ -111,6 +111,16 @@ export const projects: Project[] = [
       "https://github.com/Stray3rdBorn/Real-Time-Multimodal-Emotion-Analytics",
     year: 2025,
   },
+  {
+    slug: "log-analyzer-in-rust",
+    title: "Log Analyzer In Rust",
+    description: "A small command line tool I built in Rust to read an Nginx access log and print a summary of it. I made it to learn Rust fundamentals on a real problem: parsing text, counting things, and handling bad input safely.",
+    longDescription: ["A small command line tool I built in Rust to read an Nginx access log and print a summary of it. I made it to learn Rust fundamentals on a real problem: parsing text, counting things, and handling bad input safely."],
+    tags: ["Rust"],
+    githubUrl: "https://github.com/Stray3rdBorn/Log-analyzer-in-Rust",
+    year: 2026,
+    draft: true,
+  },
   // NEW-PROJECTS-GO-ABOVE
 ];
 export const publishedProjects = projects.filter((p) => !p.draft);
