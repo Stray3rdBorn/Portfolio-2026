@@ -113,8 +113,8 @@ export const projects: Project[] = [
   },
   {
     slug: "log-analyzer-in-rust",
-    title: "Log Analyzer In Rust",
-    description: "A small command line tool I built in Rust to read an Nginx access log and print a summary of it. I made it to learn Rust fundamentals on a real problem: parsing text, counting things, and handling bad input safely.",
+    title: "Log Analyzer",
+    description: "A small command-line tool I built in Rust to read an Nginx access log and print a summary of it. I made it to learn Rust fundamentals on a real problem: parsing text, counting things, and handling bad input safely.",
     longDescription: ["A small command line tool I built in Rust to read an Nginx access log and print a summary of it. I made it to learn Rust fundamentals on a real problem: parsing text, counting things, and handling bad input safely."],
     tags: ["Rust"],
     githubUrl: "https://github.com/Stray3rdBorn/Log-analyzer-in-Rust",
@@ -123,13 +123,13 @@ export const projects: Project[] = [
   },
   {
     slug: "expense-tracker-in-rust",
-    title: "Expense Tracker In Rust",
-    description: "A small command line expense tracker I built in Rust. I type expenses one per line, they are saved to a JSON file, and the program prints every saved expense with a total. I made it to learn Rust fundamentals on a real problem: modules, enums, parsing, error handling, and saving data to disk.",
+    title: "Expense Tracker",
+    description: "A small command-line expense tracker I built in Rust. I type expenses one per line, they are saved to a JSON file, and the program prints every saved expense with a total. I made it to learn Rust fundamentals on a real problem: modules, enums, parsing, error handling, and saving data to disk.",
     longDescription: ["A small command line expense tracker I built in Rust. I type expenses one per line, they are saved to a JSON file, and the program prints every saved expense with a total. I made it to learn Rust fundamentals on a real problem: modules, enums, parsing, error handling, and saving data to disk."],
     tags: ["Rust"],
     githubUrl: "https://github.com/Stray3rdBorn/Expense-Tracker-in-Rust",
     year: 2026,
-    draft: true,
+    draft: false,
   },
   // NEW-PROJECTS-GO-ABOVE
 ];
