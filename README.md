@@ -1,4 +1,4 @@
-# MD Wahidul Islam — Portfolio
+# Personal Portfolio
 
 A personal portfolio site built with Next.js, TypeScript, and Tailwind CSS v4. It serves as a hybrid between a résumé, a project showcase, and a research archive.
 
